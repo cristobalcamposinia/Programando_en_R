@@ -7,44 +7,33 @@
   Version: 2.2.0
 
 - Class: text
-  Output: In this lesson, we will explore some basic building blocks of the R programming
-    language.
+  Output: En esta lección, vamos a explorar algunos elementos básicos de la programación en el lenguaje R.
 
 - Class: text
-  Output: If at any point you'd like more information on a particular topic related
-    to R, you can type help.start() at the prompt, which will open a menu of resources
-    (either within RStudio or your default web browser, depending on your setup).
-    Alternatively, a simple web search often yields the answer you're looking for.
+  Output: Si en algún momento desea obtener más información sobre un tema concreto relacionado con
+     R, puede escribir help.start() en el indicador >, se abrirá un menú de recursos (ya sea dentro o RStudio su navegador web por defecto, dependiendo de su configuración).
+     Como alternativa, una simple búsqueda en Internet a menudo da la respuesta que estás buscando.
 
 - Class: cmd_question
-  Output: In its simplest form, R can be used as an interactive calculator. Type
-    5 + 7 and press Enter.
+  Output: En su forma más simple, R puede ser utilizado como una calculadora interactiva. Escribe  5 + 7 y pulsa Intro.
   CorrectAnswer: 5 + 7
   AnswerTests: omnitest(correctExpr='5 + 7')
   Hint: Type 5 + 7 and press Enter.
 
 - Class: text
-  Output: R simply prints the result of 12 by default. However, R is a programming
-    language and often the reason we use a programming language as opposed to a calculator
-    is to automate some process or avoid unnecessary repetition.
+  Output: R simplemente imprime el resultado de 12 por defecto. Sin embargo, R es un lenguaje de programación y a menudo la razón por la que utiliza un lenguaje de programación, en oposición a una calculadora, es para automatizar algunos procesos o evitar repeticiones innecesarias.
 
 - Class: text
-  Output: In this case, we may want to use our result from above in a second calculation.
-    Instead of retyping 5 + 7 every time we need it, we can just create a new variable
-    that stores the result.
+  Output: En este caso, es posible que desee utilizar nuestro resultado de arriba en un segundo cálculo. En lugar de volver a escribir 5 + 7 cada vez que lo necesitamos, podemos simplemente crear una nueva variable que almacena el resultado.
 
 - Class: text
-  Output: 'The way you assign a value to a variable in R is by using the assignment
-    operator, which is just a ''less than'' symbol followed by a ''minus'' sign. It
-    looks like this: <-'
+  Output: 'La forma en que asigna un valor a una variable en R es mediante el uso del operador de asignación, que es sólo un símbolo ''menor que'' seguido de un signo ''menos''. Eso se parece a esto: <-'
 
 - Class: text
-  Output: Think of the assignment operator as an arrow. You are assigning the value
-    on the right side of the arrow to the variable name on the left side of the arrow.
+  Output: Piense en el operador de asignación como una flecha. Usted está asignando el valor en el lado derecho de la flecha para el nombre de la variable en el lado izquierdo de la flecha.
 
 - Class: cmd_question
-  Output: To assign the result of 5 + 7 to a new variable called x, you type x <-
-    5 + 7. This can be read as 'x gets 5 plus 7'. Give it a try now.
+  Output: Para asignar el resultado de 5 + 7 a una nueva variable llamada x, escriba x <- 5 + 7. Esto puede leerse como 'x toma el valor de 5 más 7'. Dese una oportunidad ahora.
   CorrectAnswer: x <- 5 + 7
   AnswerTests: any_of_exprs('x <- 5 + 7', 'x <- 7 + 5')
   Hint: Type x <- 5 + 7. It's important to include a single space on each side of
