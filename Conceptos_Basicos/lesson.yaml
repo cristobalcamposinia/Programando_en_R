@@ -185,9 +185,8 @@
   Hint: Si su entorno de programación no soporta auto-realización, sólo tienes que escribir my_div y pulse Enter para continuar.
   
 - Class: mult_question
-  Output: "Would you like to receive credit for completing this course on
-    Coursera.org?"
+  Output: ¿Quisiera informar a alguien por correo electrónico acerca de su finalicación exitosa de este curso?
   CorrectAnswer: NULL
-  AnswerChoices: Yes;No
-  AnswerTests: coursera_on_demand()
-  Hint: ""
+  AnswerChoices: Yes; No
+  AnswerTests: notify()
+  Hint: NULL
